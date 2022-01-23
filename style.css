@@ -1,0 +1,28 @@
+html{
+    background-color: gray;
+}
+.top_title{
+    height: 50px;
+    text-align: center;
+    font-family: "Brush Script MT";
+    font-size: 30px;
+    position: relative;
+}
+.dog_names{
+    background-color: #800000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pop_dog{
+    background-color: #FFD700;
+    border-radius: 50%;
+    border: black, 1px;
+    position: relative, center;
+    padding: 10px;
+    right: 15px;
+    margin: 20px
+
+}
+.dog_info{
+    text-align: center;
+}

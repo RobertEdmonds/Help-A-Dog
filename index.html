@@ -5,3 +5,33 @@
         <script defer src="script.js"></script>
         <title>Help-A-Dog</title>
     </head>
+    <div class='top_title'>
+        <h1>Help A Dog</h1>
+    </div><br>
+    <div class="dog_names">
+        <table>
+            <tr class='names'>
+                <!-- needs th to populate -->
+                <th><button class='pop_dog'>Buddy</button></th>
+                <th><button class='pop_dog'>Buddy</button></th>
+                <th><button class='pop_dog'>Buddy</button></th>
+                <th><button class='pop_dog'>Buddy</button></th>
+                <th><button class='pop_dog'>Buddy</button></th>
+                <th><button class='pop_dog'>Buddy</button></th>
+            </tr>
+        </table>
+    </div><br>
+    <div class="dog_info">
+        <h3 id='info_message'>Please Click On Dog Name To Populate Information</h3>
+    </div><br>
+    <form class="new_dog">
+        <label for='dName'>Name:</label><br>
+        <input type='text' id="dName" name='dName' value='Puppers'><br>
+        <label for='dAge'>Age:</label><br>
+        <input type='text' id='dAge' name='dAge' value='Age'><br>
+        <label for='dPhoto'>Dog Photo:</label><br>
+        <input type='text' id="dPhoto" name='dPhoto' value='Photo'><br>
+        <label for='dDescription'>Description:</lable><br>
+        <input type='text' id='dDescription' name='dDescription' value='Puppers Attitude'><br>
+        <input type='submit' value='Add Pup'>
+    </form>
