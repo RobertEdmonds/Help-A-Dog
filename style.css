@@ -1,6 +1,27 @@
 html{
-    background-color: gray;
+    background-image: url('https://cdn.pixabay.com/photo/2020/10/14/18/55/fur-5655188_1280.jpg');
     align-items: center;
+}
+img{
+    height: 350px;
+    width: 250px;
+}
+.donateBtn{
+    display: inline-block; 
+    left: 5px;
+    top: 80%;
+    position: absolute;
+}
+.likeBtn{
+    align-items: center;
+    left: 45%;
+    top: 80%;
+    position: absolute;
+}
+.adoptBtn{
+    left:80%;
+    top: 80%;
+    position: absolute;
 }
 .top_title{
     height: 50px;
@@ -40,6 +61,21 @@ html{
     border-radius: 20%;
     margin: 0px;
 }
-#dDescription{
+.discription{
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-top: 2px;
+}
+.dog_likes{
+    float: right;
+    position: relative;
+}
+.dog_donations{
+    float: left;
+    position: relative;
+}
+#fDescription{
     height: 150px;
 }
