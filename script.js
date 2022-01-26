@@ -35,10 +35,19 @@ function popDog(info){
             document.querySelector('.dog_info').replaceChildren(img, dogName, dogAge, dogDiscript)
         }
     })
+    donateBtn.addEventListener('click', ()=> {
+        info.donation += 5
+        dogDonation.textContent = `Donations: $${info.donation}`
+        updateDonation(info)
+    })
 }
+
 function renderDog(){
     fetch('  http://localhost:3000/dogs')
     .then(resp => resp.json())
     .then(data => data.map(popDog))
 }
 renderDog()
+function updateDonation(dogObj){
+    fetch('')
+}

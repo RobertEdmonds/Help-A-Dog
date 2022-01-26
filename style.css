@@ -11,17 +11,22 @@ img{
     left: 5px;
     top: 80%;
     position: absolute;
+    width: 75px;
 }
 .likeBtn{
     align-items: center;
-    left: 45%;
+    left: 40%;
     top: 80%;
     position: absolute;
+    width: 75px;
+    height: 40px;
+    border-radius: 50%;
 }
 .adoptBtn{
     left:80%;
     top: 80%;
     position: absolute;
+    width: 75px;
 }
 .top_title{
     height: 50px;
@@ -63,18 +68,23 @@ img{
 }
 .discription{
     width: 350px;
-    text-align: center;
+    min-height: 100px;
+    align-items: center;
     display: inline-block;
     position: relative;
     margin-top: 2px;
 }
 .dog_likes{
-    float: right;
-    position: relative;
+    left: 83%;
+    top: 30%;
+    display: inline-block;
+    position: absolute;
 }
 .dog_donations{
-    float: left;
-    position: relative;
+    left: 0%;
+    top: 30%;
+    display: inline-block;
+    position: absolute;
 }
 #fDescription{
     height: 150px;
