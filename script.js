@@ -21,7 +21,7 @@ function popDog(info){
     dogLikes.classList.add('dog_likes')
     dogLikes.textContent = `Likes: ${info.like}`
     dogDonation.classList.add('dog_donations')
-    dogDonation.textContent = `Donations: ${info.donation}`
+    dogDonation.textContent = `Donations: $${info.donation}`
     donateBtn.classList.add('donateBtn')
     donateBtn.textContent = 'Donate $5'
     likeBtn.classList.add('likeBtn')
@@ -49,5 +49,14 @@ function renderDog(){
 }
 renderDog()
 function updateDonation(dogObj){
-    fetch('')
+    fetch(`http://localhost:3000/dogs/${dogObj.id}`,{
+        method: 'PATCH',
+        headers:{
+            'Content-Type': 'application/json',
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(dogObj)
+    })
+    .then(resp => resp.json())
+    .then(dog => console.log(dog))
 }
