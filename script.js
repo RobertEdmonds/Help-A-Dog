@@ -1,3 +1,17 @@
+document.querySelector('.new_dog').addEventListener('submit', addDogInfo)
+function addDogInfo(elements){
+    elements.preventDefault()
+    let newDog = {
+        name:elements.target.fName.value,
+        age:elements.target.fAge.value,
+        image: elements.target.fPhoto.value,
+        discription: elements.target.fDescription.value,
+        donation: 0,
+        like: 0
+    }
+    popDog(newDog)
+    formCreate(newDog)
+}
 function popDog(info){
     let titleName = document.createElement('th')
     let titleBtn = document.createElement('button')
@@ -40,12 +54,17 @@ function popDog(info){
         dogDonation.textContent = `Donations: $${info.donation}`
         updateDonation(info)
     })
+    likeBtn.addEventListener('click', ()=>{
+        info.like += 1
+        dogLikes.textContent = `Likes: ${info.like}`
+        updateLike(info)
+    })
 }
 
 function renderDog(){
     fetch('  http://localhost:3000/dogs')
     .then(resp => resp.json())
-    .then(data => data.map(popDog))
+    .then(data => data.forEach(popDog))
 }
 renderDog()
 function updateDonation(dogObj){
@@ -58,5 +77,27 @@ function updateDonation(dogObj){
         body: JSON.stringify(dogObj)
     })
     .then(resp => resp.json())
+}
+function formCreate(dogObj){
+    fetch('http://localhost:3000/dogs',{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(dogObj)
+    })
+    .then(resp => resp.json())
     .then(dog => console.log(dog))
+}
+function updateLike(dogObj){
+    fetch(`http://localhost:3000/dogs/${dogObj.id}`,{
+        method: 'PATCH',
+        headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(dogObj)
+    })
+    .then(resp => resp.json())
 }
