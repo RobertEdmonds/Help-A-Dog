@@ -1,5 +1,5 @@
 html{
-    background-image: url('https://cdn.pixabay.com/photo/2020/10/14/18/55/fur-5655188_1280.jpg');
+    background-image: url('https://cdn.petsmagazine.com.sg/img/articles/dreamstime_xxl_11686457_edit.jpg');
     align-items: center;
 }
 img{
@@ -79,12 +79,16 @@ img{
     top: 30%;
     display: inline-block;
     position: absolute;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px black;
 }
 .dog_donations{
     left: 0%;
     top: 30%;
     display: inline-block;
     position: absolute;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px black;
 }
 #fDescription{
     height: 150px;

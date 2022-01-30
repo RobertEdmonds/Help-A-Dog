@@ -59,8 +59,18 @@ function popDog(info){
         dogLikes.textContent = `Likes: ${info.like}`
         updateLike(info)
     })
+    adoptBtn.addEventListener('click', () => {
+        alert(`A member of our team will contact you about adopting ${info.name} in the next 24 hours!`)
+        
+        if(confirm(`We will put ${info.name} on hold for you!`) == true){
+            titleBtn.remove()
+            document.querySelector('.dog_info').replaceChildren('Please Click On Dog Name To Populate Information')
+            deleteDog(info.id)
+        }else{
+            console.log('reject proposal')
+        }
+    })
 }
-
 function renderDog(){
     fetch('  http://localhost:3000/dogs')
     .then(resp => resp.json())
@@ -88,7 +98,6 @@ function formCreate(dogObj){
         body: JSON.stringify(dogObj)
     })
     .then(resp => resp.json())
-    .then(dog => console.log(dog))
 }
 function updateLike(dogObj){
     fetch(`http://localhost:3000/dogs/${dogObj.id}`,{
@@ -98,6 +107,16 @@ function updateLike(dogObj){
             'Accept': 'application/json'
         },
         body: JSON.stringify(dogObj)
+    })
+    .then(resp => resp.json())
+}
+function deleteDog(id){
+    fetch(`http://localhost:3000/dogs/${id}`,{
+        method: 'DELETE',
+        headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
     })
     .then(resp => resp.json())
 }

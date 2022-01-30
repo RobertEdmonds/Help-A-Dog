@@ -7,7 +7,7 @@
       "image": "https://www.hepper.com/wp-content/uploads/2021/11/blue-heeler-german-shepherd-mix_demibombe_Shutterstock.jpg",
       "discription": "Lovable cuddle bug!",
       "donation": 5,
-      "like": 0
+      "like": 1
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "image": "https://www.allthingsdogs.com/wp-content/uploads/2019/06/Pitbull-Lab-Mix-What-To-Know-Before-Buying-A-Labrabull-Cover.jpg",
       "discription": "Sweethearted and playful!",
       "donation": 0,
-      "like": 0
+      "like": 2
     },
     {
       "id": 3,
@@ -53,6 +53,15 @@
       "discription": "Great with kids and well trained!",
       "donation": 0,
       "like": 0
+    },
+    {
+      "name": "Spot",
+      "age": "7",
+      "image": "https://www.yourpurebredpuppy.com/dogbreeds/photos-CD/dalmatiansf6.jpg",
+      "discription": "Happy go-lucky ambitious dog! House trained and leash trained. Spot loves adventure.",
+      "donation": 15,
+      "like": 3,
+      "id": 7
     }
   ]
 }
