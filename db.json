@@ -6,8 +6,8 @@
       "age": "13",
       "image": "https://www.hepper.com/wp-content/uploads/2021/11/blue-heeler-german-shepherd-mix_demibombe_Shutterstock.jpg",
       "discription": "Lovable cuddle bug!",
-      "donation": 5,
-      "like": 1
+      "donation": 10,
+      "like": 2
     },
     {
       "id": 2,
@@ -58,9 +58,9 @@
       "name": "Spot",
       "age": "7",
       "image": "https://www.yourpurebredpuppy.com/dogbreeds/photos-CD/dalmatiansf6.jpg",
-      "discription": "Happy go-lucky ambitious dog! House trained and leash trained. Spot loves adventure.",
-      "donation": 15,
-      "like": 3,
+      "discription": "Happy and friendly pup! House Trained and leash trained!",
+      "donation": 5,
+      "like": 1,
       "id": 7
     }
   ]

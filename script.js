@@ -1,6 +1,7 @@
+document.addEventListener('DOMContentLoaded', renderDog)
 document.querySelector('.new_dog').addEventListener('submit', addDogInfo)
 function addDogInfo(elements){
-    elements.preventDefault()
+    // elements.preventDefault()
     let newDog = {
         name:elements.target.fName.value,
         age:elements.target.fAge.value,
@@ -76,7 +77,7 @@ function renderDog(){
     .then(resp => resp.json())
     .then(data => data.forEach(popDog))
 }
-renderDog()
+
 function updateDonation(dogObj){
     fetch(`http://localhost:3000/dogs/${dogObj.id}`,{
         method: 'PATCH',
