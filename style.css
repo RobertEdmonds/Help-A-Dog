@@ -34,6 +34,7 @@ img{
     font-family: "Brush Script MT";
     font-size: 30px;
     position: relative;
+    -webkit-text-stroke: 1px white;
 }
 .dog_names{
     background-color: #800000;
