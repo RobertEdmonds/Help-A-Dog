@@ -62,13 +62,14 @@ function popDog(info){
     })
     adoptBtn.addEventListener('click', () => {
         alert(`A member of our team will contact you about adopting ${info.name} in the next 24 hours!`)
-        
+        let NewList = document.createElement('h3')
+        NewList.textContent = 'Please Click On Dog Name To Populate Information'
         if(confirm(`We will put ${info.name} on hold for you!`) == true){
             titleBtn.remove()
-            document.querySelector('.dog_info').replaceChildren('Please Click On Dog Name To Populate Information')
+            document.querySelector('.dog_info').replaceChildren(NewList)
             deleteDog(info.id)
         }else{
-            console.log('reject proposal')
+            null
         }
     })
 }
