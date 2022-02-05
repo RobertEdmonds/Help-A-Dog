@@ -6,49 +6,52 @@ html{
 img{
     height: 350px;
     width: 250px;
-}
-.donateBtn{
-    display: inline-block; 
-    left: 5px;
-    top: 80%;
-    position: absolute;
-    width: 75px;
-}
-.likeBtn{
     align-items: center;
-    left: 40%;
-    top: 80%;
-    position: absolute;
-    width: 75px;
-    height: 40px;
-    border-radius: 50%;
-}
-.adoptBtn{
-    left:80%;
-    top: 80%;
-    position: absolute;
-    width: 75px;
-}
-.top_title{
-    height: 70px;
-    text-align: center;
-    font-family: "Brush Script MT";
-    font-size: 40px;
-    position: relative;
-    -webkit-text-stroke: 1px white;
 }
 .dog_names{
     background-color: #800000;
-    background-repeat: repeat;
+    overflow: hidden;
+    height: 40px;
     /* background-size: cover; */
+}
+.dog_list{
+    background-color: #FFD700;
+    border-radius: 50%;
+    border: black, 1px;
+    float: left;
+    font-size: 20px;
+    height: 35px;
+    margin-top: 2px;
+}
+.dog_form{
+    background-color: #FFD700;
+    border-radius: 50%;
+    border: black, 1px;
+    height: 35px;
+    display: block;
+    float: right;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.info_message{
+    width: 300px;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+}
+#list_spot{
+    float:left;
+    display: none;
+    width: 125px;
 }
 .pop_dog{
     background-color: #FFD700;
     border-radius: 50%;
     border: black, 1px;
-    position: relative, center;
+    float: left;
+    width: 100px;
+    display: block;
     padding: 10px;
-    margin: 20px;
     font-size: 20px;
 
 }
@@ -62,7 +65,8 @@ img{
 }
 .new_dog{
     text-align: center;
-    display: inline-block;
+    display: none;
+    /* have to switch display to inline-block */
     position: relative;
     border: 1px;
     border-color: gray;
@@ -71,7 +75,7 @@ img{
     border-radius: 20%;
     margin: 0px;
 }
-.discription{
+.description{
     width: 350px;
     min-height: 150px;
     align-items: center;
@@ -85,17 +89,50 @@ img{
     top: 30%;
     display: inline-block;
     position: absolute;
-    color: whitesmoke;
-    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #800000;
 }
 .dog_donations{
     left: 0%;
     min-height: 75px;
+    width: 70px;
     top: 30%;
     display: inline-block;
     position: absolute;
-    color: whitesmoke;
-    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #800000;
+}
+.donateBtn{
+    display: inline-block; 
+    left: 5px;
+    top: 80%;
+    position: absolute;
+    width: 75px;
+    height: 40px;
+}
+.likeBtn{
+    left:80%;
+    top: 80%;
+    position: absolute;
+    width: 75px;
+    height: 40px;
+}
+.adoptBtn{
+    align-items: center;
+    left: 40%;
+    top: 80%;
+    position: absolute;
+    width: 75px;
+    height: 40px;
+    border-radius: 50%;
+}
+.top_title{
+    height: 70px;
+    text-align: center;
+    font-family: "Brush Script MT";
+    font-size: 40px;
+    position: relative;
+    -webkit-text-stroke: 1px white;
 }
 #fDescription{
     height: 150px;
