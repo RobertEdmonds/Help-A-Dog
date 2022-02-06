@@ -53,6 +53,15 @@
       "description": "Great with kids and well trained!",
       "donation": 0,
       "like": 0
+    },
+    {
+      "name": "Spot",
+      "age": "7",
+      "image": "https://www.yourpurebredpuppy.com/dogbreeds/photos-CD/dalmatiansf6.jpg",
+      "description": "Smart and lovable!! House trained. Great with kids.",
+      "donation": 0,
+      "like": 0,
+      "id": 7
     }
   ]
 }
