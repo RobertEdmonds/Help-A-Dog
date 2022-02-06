@@ -12,7 +12,7 @@ img{
 .dog_names{
     background-color: #800000;
     overflow: hidden;
-    height: 40px;
+    height: 80px;
     /* background-size: cover; */
 }
 .dog_list{
@@ -20,14 +20,16 @@ img{
     border-radius: 50%;
     float: left;
     font-size: 20px;
-    height: 35px;
+    width: 125px;
+    height: 75px;
     margin-top: 2px;
 }
 .dog_form{
     background-color: #FFD700;
     border-radius: 50%;
     border: black, 1px;
-    height: 35px;
+    width: 125px;
+    height: 75px;
     display: block;
     float: right;
     font-size: 20px;
