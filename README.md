@@ -16,5 +16,5 @@ I developed my help a dog page using an open API that includes an array of objec
 ---
 ## Links
 * [Youtube Webpage Walk Through](https://www.youtube.com/watch?v=X3RvrVaptbc "Help A Dog")
-
+* [Blog link](https://medium.com/@bobby.edmonds89/playing-with-dom-to-make-your-webpage-look-perfect-bf5b4b516510)
 
