@@ -18,7 +18,6 @@ function addDogInfo(event){
         donation: 0,
         like: 0,
     }
-    popDog(newDog)
     formCreate(newDog)
     document.querySelector('.new_dog').reset()
 }
@@ -93,24 +92,12 @@ function renderDog(){
     .then(resp => resp.json())
     .then(data => data.forEach(popDog))
 }
-
 function updateDonation(dogObj){
     fetch(`http://localhost:3000/dogs/${dogObj.id}`,{
         method: 'PATCH',
         headers:{
             'Content-Type': 'application/json',
             "Accept": "application/json"
-        },
-        body: JSON.stringify(dogObj)
-    })
-    .then(resp => resp.json())
-}
-function formCreate(dogObj){
-    fetch('http://localhost:3000/dogs',{
-        method: 'POST',
-        headers:{
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
         },
         body: JSON.stringify(dogObj)
     })
@@ -126,6 +113,18 @@ function updateLike(dogObj){
         body: JSON.stringify(dogObj)
     })
     .then(resp => resp.json())
+}
+function formCreate(dogObj){
+    fetch('http://localhost:3000/dogs',{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(dogObj)
+    })
+    .then(resp => resp.json())
+    .then(addedDog => popDog(addedDog))
 }
 function deleteDog(id){
     fetch(`http://localhost:3000/dogs/${id}`,{

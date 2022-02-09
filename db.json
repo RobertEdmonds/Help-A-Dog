@@ -62,15 +62,6 @@
       "donation": 10,
       "like": 2,
       "id": 7
-    },
-    {
-      "name": "Fido",
-      "age": "7",
-      "image": "https://www.yourpurebredpuppy.com/dogbreeds/photos-CD/dalmatiansf6.jpg",
-      "description": "Happy and lovable!",
-      "donation": 0,
-      "like": 0,
-      "id": 8
     }
   ]
 }

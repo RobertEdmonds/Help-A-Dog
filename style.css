@@ -9,6 +9,14 @@ img{
     align-items: center;
     border-radius: 25%;
 }
+.top_title{
+    height: 70px;
+    text-align: center;
+    font-family: "Brush Script MT";
+    font-size: 40px;
+    position: relative;
+    -webkit-text-stroke: 1px white;
+}
 .dog_names{
     background-color: #800000;
     overflow: hidden;
@@ -79,6 +87,9 @@ img{
     border-radius: 20%;
     margin: 0px;
 }
+#fDescription{
+    height: 150px;
+}
 .description{
     width: 350px;
     min-height: 150px;
@@ -130,14 +141,4 @@ img{
     height: 40px;
     border-radius: 50%;
 }
-.top_title{
-    height: 70px;
-    text-align: center;
-    font-family: "Brush Script MT";
-    font-size: 40px;
-    position: relative;
-    -webkit-text-stroke: 1px white;
-}
-#fDescription{
-    height: 150px;
-}
+
